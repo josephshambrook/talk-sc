@@ -6,7 +6,7 @@
 }
 
 .reel > * {
-  flex: 0 0 undefined;
+  flex: 0 0 auto;
 }
 
 .reel > img {
@@ -17,8 +17,4 @@
 
 .reel > * + * {
   margin-left: 1rem;
-}
-
-.reel.overflowing {
-  padding-bottom: 1rem;
 }

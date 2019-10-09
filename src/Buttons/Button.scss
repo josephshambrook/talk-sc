@@ -1,0 +1,39 @@
+@mixin generateButtonState($name, $bkgdColor, $textColor: #fff) {
+  &--#{$name} {
+    background-color: $bkgdColor;
+    border-color: $bkgdColor;
+    color: $textColor;
+
+    &:hover {
+      background-color: darken($bkgdColor, 10%);
+      border-color: darken($bkgdColor, 15%);
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 0.2rem rgba($bkgdColor,.5);
+      outline: 0;
+    }
+  }
+}
+
+.button {
+  align-items: center;
+  border-radius: 0.25rem;
+  font-size: 2rem;
+  font-weight: 600;
+  display: inline-flex;
+  justify-content: center;
+  line-height: 1.2;
+  min-width: 2.5rem;
+  outline: currentcolor none medium;
+  padding: 2rem;
+  position: relative;
+  transition: all 250ms ease 0s;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  @include generateButtonState('success', #28a745);
+  @include generateButtonState('danger', #dc3545);
+  @include generateButtonState('info', #17a2b8);
+}

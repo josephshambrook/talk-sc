@@ -1,7 +1,5 @@
 import React from "react";
-import "./App.css";
-
-import Reel from "./Reel/Reel";
+import Reel from "./Reel";
 
 const App = () => (
   <div className="content">
