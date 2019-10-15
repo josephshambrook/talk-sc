@@ -1,7 +1,4 @@
-import styled from 'styled-components';
-import { string } from "prop-types";
-
-const Grid = styled.div`
+.grid {
   display: grid;
   grid-gap: 0.5rem;
   grid-template-areas:
@@ -23,9 +20,9 @@ const Grid = styled.div`
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 6rem 1fr 6rem;
   }
-`;
+}
 
-Grid.Item = styled.div`
+.grid__item {
   align-items: center;
   border: 3px dashed #fff;
   color: #fff;
@@ -33,16 +30,29 @@ Grid.Item = styled.div`
   font-size: 2rem;
   font-weight: bold;
   justify-content: center;
-
-  ${({ area }) => `grid-area: ${area};`}
-`;
-
-Grid.Item.propTypes = {
-  area: string
 }
 
-Grid.Item.defaultProps = {
-  area: ''
+.grid__item--striped {
+  --stripe-color: #093ecd;
+
+  background-image: linear-gradient(45deg, var(--stripe-color) 25%, transparent 25%, transparent 50%, var(--stripe-color) 50%, var(--stripe-color) 75%, transparent 75%, transparent 100%);
+  background-size: 56.57px 56.57px;
 }
 
-export default Grid;
+.grid__item--header {
+  grid-area: header;
+}
+
+.grid__item--main {
+  --stripe-color: #240579;
+  grid-area: main;
+}
+
+.grid__item--sidebar {
+  --stripe-color: #01B3C3;
+  grid-area: sidebar;
+}
+
+.grid__item--footer {
+  grid-area: footer;
+}
