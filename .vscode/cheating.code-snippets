@@ -1,0 +1,74 @@
+{
+	"Import Grid": {
+		"scope": "javascript",
+		"prefix": "SC01",
+		"body": [
+			"import Grid from \"./Grid/Grid\";"
+		],
+		"description": "Imports Grid component"
+	},
+	"Create Grid Item": {
+		"scope": "javascript,html,jsx",
+		"prefix": "SC02",
+		"body": [
+			"<Grid.Item>$1</Grid.Item>$0"
+		],
+		"description": "Creates a Grid.Item element"
+	},
+	"Import SC": {
+		"scope": "javascript",
+		"prefix": "SC03",
+		"body": [
+			"import styled from \"styled-components\";"
+		],
+		"description": "Imports the Styled Components package"
+	},
+	"Create SC(Grid.Item)": {
+		"scope": "javascript",
+		"prefix": "SC04",
+		"body": [
+			"const $1 = styled(Grid.Item)`",
+			"  grid-area: $2;",
+			"`;",
+			"$0"
+		],
+		"description": "Creates a new Styled Component, extending Grid.Item"
+	},
+	"Insert JSX element": {
+		"scope": "javascript,html,jsx",
+		"prefix": "SC05",
+		"body": [
+			"<$1>$1</$1>$0"
+		],
+		"description": "Inserts a new JSX element, with a custom name"
+	},
+	"Insert StripedElement": {
+		"scope": "javascript",
+		"prefix": "SC06",
+		"body": [
+			"const StripedElement = styled(Grid.Item)`",
+			"  --stripe-color: #093ecd;",
+			"",
+			"  background-image: linear-gradient(45deg, var(--stripe-color) 25%, transparent 25%, transparent 50%, var(--stripe-color) 50%, var(--stripe-color) 75%, transparent 75%, transparent 100%);",
+			"  background-size: 56.57px 56.57px;",
+			"`;"
+		],
+		"description": "Inserts the StripedElement component"
+	},
+	"Override Stripe Color for Main": {
+		"scope": "css,scss,sass",
+		"prefix": "SC07",
+		"body": [
+			"--stripe-color: #240579;",
+		],
+		"description": "Adds CSS for overriding --stripe-color property for Main"
+	},
+	"Override Stripe Color for Sidebar": {
+		"scope": "css,scss,sass",
+		"prefix": "SC08",
+		"body": [
+			"--stripe-color: #01B3C3;",
+		],
+		"description": "Adds CSS for overriding --stripe-color property for Sidebar"
+	}
+}
