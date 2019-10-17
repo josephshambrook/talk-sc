@@ -30,4 +30,4 @@ This was a live demo, which can go horribly wrong in many ways, so I had a few b
 
 1.  Clone the repo and `cd` into it
 2.  Install the dependencies; I used `yarn`, but you can use `npm i` if you want
-3.  To run locally, run `yarn start`. The browser should open the site at `localhost:8000`
+3.  To run locally, run `yarn start`. The browser should open the site at `localhost:3000`
