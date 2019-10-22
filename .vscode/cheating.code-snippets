@@ -11,7 +11,10 @@
 		"scope": "javascript,html,jsx",
 		"prefix": "SC02",
 		"body": [
-			"<Grid.Item>$1</Grid.Item>$0"
+			"<Grid.Item>$1</Grid.Item>",
+			"<Grid.Item>$2</Grid.Item>",
+			"<Grid.Item>$3</Grid.Item>",
+			"<Grid.Item>$4</Grid.Item>$0"
 		],
 		"description": "Creates a Grid.Item element"
 	},
@@ -30,6 +33,15 @@
 			"const $1 = styled(Grid.Item)`",
 			"  grid-area: $2;",
 			"`;",
+			"const $3 = styled(Grid.Item)`",
+			"  grid-area: $4;",
+			"`;",
+			"const $5 = styled(Grid.Item)`",
+			"  grid-area: $6;",
+			"`;",
+			"const $7 = styled(Grid.Item)`",
+			"  grid-area: $8;",
+			"`;",
 			"$0"
 		],
 		"description": "Creates a new Styled Component, extending Grid.Item"
@@ -38,7 +50,10 @@
 		"scope": "javascript,html,jsx",
 		"prefix": "SC05",
 		"body": [
-			"<$1>$1</$1>$0"
+			"<$1>$1</$1>",
+			"<$2>$2</$2>",
+			"<$3>$3</$3>",
+			"<$4>$4</$4>$0"
 		],
 		"description": "Inserts a new JSX element, with a custom name"
 	},
