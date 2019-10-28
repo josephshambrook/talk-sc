@@ -4,9 +4,7 @@ Source code for my talk about being persuaded to use Styled Components.
 
 ## Talk description
 
-The talk is my true story about my experiences of becoming more open to the concept of CSS-in-JS.
-
-I'll add a link to the slides after I've delivered the talk for the first time.
+The talk was my true story about my experiences of becoming more open to the concept of CSS-in-JS. [Here's a link to the slides](https://docs.google.com/presentation/d/1ETrJJ49IDHMVXT5OOFDYLBRvZlOEwgC_yXpho3tCMM0/edit?usp=sharing).
 
 ## What's here
 
